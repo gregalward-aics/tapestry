@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "tapestry notebook"
+  author: "Greg Alward"
+  date: "9/17/2024"
+  chapters:
+    - index.qmd
+    - part1/intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
