@@ -1,0 +1,57 @@
+# Seminar Topics
+
+Tapestry Discussion Topics
+
+1. What is Tapestry?
+Data organized in a complex dataframe (i.e., System of Social Accounts)
+Open source, open access, transparent methods
+Optimized to facilitate natural resource and agricultural contribution assessments
+Designed to reduce common user mistakes 
+Both private sector (inter-industry) and public sector (inter-institutional) transactions
+
+2. SAMs: Contribution & Impact Analysis
+Descriptive (Contribution) vs Counterfactual (Impact)
+Consistent metrics and vocabulary concepts to describe contribution
+SAM transformations: Tableau A vs Tableau B; base accounts vs Leontief accounts (ABC)
+Contribution as a multi-hop path
+Contribution as Causal networks
+Contribution as Explanation Patterns
+
+3. SAMs: Accounts & Dataframes
+SAM, NIPA, SNA
+Visualizing a SAM as a 2-D Tableau
+All SAMs are Multi-regional
+Disaggregation, disaggregation, disaggregation
+Tableau variants: Tableau A & B, NIPA Gross Flows, SUIOT, SIOT
+From Tableau A to Tableau B: Leontief Transformation
+Derivation beginning with fundamental accounting equation identities; mass balances
+Place of Residence, Place of Production, Place of Work, Place of Purchase
+Redefinition
+Margins, Purchaser Prices, Producer Prices
+Commodity Trade modeling & transportation margins
+Domestic vs Foreign Commodity Trade
+Actual transactions, not imputed values
+Industry & commodity disaggregations 405 to 475
+
+4. SAMs: Math & Data Models
+Dataframe for Tapestry SAM accounts
+Interaction submatrices vs transfer/reclassification submatrices; regional vs national; geo regions vs administrative regions; categorical, hierarchical
+Data Models, Matrix Models, Graph Models
+Derivation beginning with fundamental accounting eqn
+Layers (tiers) of indirect; column space expansion, tensors
+Accounts as Multi-dimensional, Hierarchical Dataframe
+Predicate Logic & value chains in knowledge graphs
+Data cubes, star configuration
+Dataframe for Tapestry SAM accounts
+Interaction submatrices vs transfer/reclassification submatrices; regional vs national; geo regions vs administrative regions; categorical, hierarchical
+
+5. SAMs: Knowledge Graphs & AI Agents
+Network/Graph/Knowledge Graph
+LLM, RAG, GraphRAG, Fabric
+AI Agent, GraphRAG with FABRIC
+Predicate Logic, triples, value chains in knowledge graphs
+How to build a KG from a SAM
+How to use a SAM KG with LLMs
+
+
+

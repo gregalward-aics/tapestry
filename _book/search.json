@@ -12,11 +12,11 @@
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "4  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
@@ -37,6 +37,146 @@
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro2.html",
+    "href": "intro2.html",
+    "title": "5  Introductionxx",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introductionxx</span>"
+    ]
+  },
+  {
+    "objectID": "part1/ui_seminar_1.html",
+    "href": "part1/ui_seminar_1.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "Tapestry Discussion Topics\n\nWhat is Tapestry? Data organized in a complex dataframe (i.e., System of Social Accounts) Open source, open access, transparent methods Optimized to facilitate natural resource and agricultural contribution assessments Designed to reduce common user mistakes Both private sector (inter-industry) and public sector (inter-institutional) transactions\nSAMs: Contribution & Impact Analysis Descriptive (Contribution) vs Counterfactual (Impact) Consistent metrics and vocabulary concepts to describe contribution SAM transformations: Tableau A vs Tableau B; base accounts vs Leontief accounts (ABC) Contribution as a multi-hop path Contribution as Causal networks Contribution as Explanation Patterns\nSAMs: Accounts & Dataframes SAM, NIPA, SNA Visualizing a SAM as a 2-D Tableau All SAMs are Multi-regional Disaggregation, disaggregation, disaggregation Tableau variants: Tableau A & B, NIPA Gross Flows, SUIOT, SIOT From Tableau A to Tableau B: Leontief Transformation Derivation beginning with fundamental accounting equation identities; mass balances Place of Residence, Place of Production, Place of Work, Place of Purchase Redefinition Margins, Purchaser Prices, Producer Prices Commodity Trade modeling & transportation margins Domestic vs Foreign Commodity Trade Actual transactions, not imputed values Industry & commodity disaggregations 405 to 475\nSAMs: Math & Data Models Dataframe for Tapestry SAM accounts Interaction submatrices vs transfer/reclassification submatrices; regional vs national; geo regions vs administrative regions; categorical, hierarchical Data Models, Matrix Models, Graph Models Derivation beginning with fundamental accounting eqn Layers (tiers) of indirect; column space expansion, tensors Accounts as Multi-dimensional, Hierarchical Dataframe Predicate Logic & value chains in knowledge graphs Data cubes, star configuration Dataframe for Tapestry SAM accounts Interaction submatrices vs transfer/reclassification submatrices; regional vs national; geo regions vs administrative regions; categorical, hierarchical\nSAMs: Knowledge Graphs & AI Agents Network/Graph/Knowledge Graph LLM, RAG, GraphRAG, Fabric AI Agent, GraphRAG with FABRIC Predicate Logic, triples, value chains in knowledge graphs How to build a KG from a SAM How to use a SAM KG with LLMs",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "part1/ui_presentation_1.html",
+    "href": "part1/ui_presentation_1.html",
+    "title": "3  SAMs",
+    "section": "",
+    "text": "4 In the morning",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>SAMs</span>"
+    ]
+  },
+  {
+    "objectID": "part1/ui_presentation_1.html#getting-up",
+    "href": "part1/ui_presentation_1.html#getting-up",
+    "title": "3  SAMs",
+    "section": "4.1 Getting up",
+    "text": "4.1 Getting up\n\nTurn off alarm\nGet out of bed",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>SAMs</span>"
+    ]
+  },
+  {
+    "objectID": "part1/ui_presentation_1.html#breakfast",
+    "href": "part1/ui_presentation_1.html#breakfast",
+    "title": "3  SAMs",
+    "section": "4.2 Breakfast",
+    "text": "4.2 Breakfast\n\nEat eggs\nDrink coffee",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>SAMs</span>"
+    ]
+  },
+  {
+    "objectID": "part1/ui_presentation_1.html#dinner",
+    "href": "part1/ui_presentation_1.html#dinner",
+    "title": "3  SAMs",
+    "section": "5.1 Dinner",
+    "text": "5.1 Dinner\n\nEat spaghetti\nDrink wine\n\n\n\nGet in bed\nCount sheep",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>SAMs</span>"
+    ]
+  },
+  {
+    "objectID": "presentations/ui_presentation_1.html",
+    "href": "presentations/ui_presentation_1.html",
+    "title": "3  SAMs",
+    "section": "",
+    "text": "4 In the morning",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>SAMs</span>"
+    ]
+  },
+  {
+    "objectID": "presentations/ui_presentation_1.html#getting-up",
+    "href": "presentations/ui_presentation_1.html#getting-up",
+    "title": "3  SAMs",
+    "section": "4.1 Getting up",
+    "text": "4.1 Getting up\n\nTurn off alarm\nGet out of bed",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>SAMs</span>"
+    ]
+  },
+  {
+    "objectID": "presentations/ui_presentation_1.html#breakfast",
+    "href": "presentations/ui_presentation_1.html#breakfast",
+    "title": "3  SAMs",
+    "section": "4.2 Breakfast",
+    "text": "4.2 Breakfast\n\nEat eggs\nDrink coffee",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>SAMs</span>"
+    ]
+  },
+  {
+    "objectID": "presentations/ui_presentation_1.html#dinner",
+    "href": "presentations/ui_presentation_1.html#dinner",
+    "title": "3  SAMs",
+    "section": "5.1 Dinner",
+    "text": "5.1 Dinner\n\nEat spaghetti\nDrink wine\n\n\n\nGet in bed\nCount sheep",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>SAMs</span>"
+    ]
+  },
+  {
+    "objectID": "presentations/ui_seminar_1.html",
+    "href": "presentations/ui_seminar_1.html",
+    "title": "2  Seminar Topics",
+    "section": "",
+    "text": "Tapestry Discussion Topics\n\nWhat is Tapestry? Data organized in a complex dataframe (i.e., System of Social Accounts) Open source, open access, transparent methods Optimized to facilitate natural resource and agricultural contribution assessments Designed to reduce common user mistakes Both private sector (inter-industry) and public sector (inter-institutional) transactions\nSAMs: Contribution & Impact Analysis Descriptive (Contribution) vs Counterfactual (Impact) Consistent metrics and vocabulary concepts to describe contribution SAM transformations: Tableau A vs Tableau B; base accounts vs Leontief accounts (ABC) Contribution as a multi-hop path Contribution as Causal networks Contribution as Explanation Patterns\nSAMs: Accounts & Dataframes SAM, NIPA, SNA Visualizing a SAM as a 2-D Tableau All SAMs are Multi-regional Disaggregation, disaggregation, disaggregation Tableau variants: Tableau A & B, NIPA Gross Flows, SUIOT, SIOT From Tableau A to Tableau B: Leontief Transformation Derivation beginning with fundamental accounting equation identities; mass balances Place of Residence, Place of Production, Place of Work, Place of Purchase Redefinition Margins, Purchaser Prices, Producer Prices Commodity Trade modeling & transportation margins Domestic vs Foreign Commodity Trade Actual transactions, not imputed values Industry & commodity disaggregations 405 to 475\nSAMs: Math & Data Models Dataframe for Tapestry SAM accounts Interaction submatrices vs transfer/reclassification submatrices; regional vs national; geo regions vs administrative regions; categorical, hierarchical Data Models, Matrix Models, Graph Models Derivation beginning with fundamental accounting eqn Layers (tiers) of indirect; column space expansion, tensors Accounts as Multi-dimensional, Hierarchical Dataframe Predicate Logic & value chains in knowledge graphs Data cubes, star configuration Dataframe for Tapestry SAM accounts Interaction submatrices vs transfer/reclassification submatrices; regional vs national; geo regions vs administrative regions; categorical, hierarchical\nSAMs: Knowledge Graphs & AI Agents Network/Graph/Knowledge Graph LLM, RAG, GraphRAG, Fabric AI Agent, GraphRAG with FABRIC Predicate Logic, triples, value chains in knowledge graphs How to build a KG from a SAM How to use a SAM KG with LLMs",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Seminar Topics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/notes.html",
+    "href": "notebooks/notes.html",
+    "title": "4  Notes",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Notes</span>"
+    ]
+  },
+  {
+    "objectID": "scripts/script_1.html",
+    "href": "scripts/script_1.html",
+    "title": "5  Scripts",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Scripts</span>"
+    ]
+  },
+  {
+    "objectID": "data/links_to_data.html",
+    "href": "data/links_to_data.html",
+    "title": "6  Links to Data",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Links to Data</span>"
     ]
   }
 ]

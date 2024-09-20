@@ -8,6 +8,11 @@ book:
   chapters:
     - index.qmd
     - part1/intro.qmd
+    - presentations/ui_seminar_1.qmd
+    - presentations/ui_presentation_1.qmd
+    - notebooks/notes.qmd
+    - scripts/script_1.qmd
+    - data/links_to_data.qmd
     - summary.qmd
     - references.qmd
 
