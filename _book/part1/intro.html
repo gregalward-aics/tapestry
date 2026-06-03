@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; Introduction – tapestry notebook</title>
+<title>1&nbsp; Purpose and Objective – tapestry notebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,7 +50,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../part1/ui_seminar_1.html" rel="next">
+<link href="../presentations/ui_seminar_1.html" rel="next">
 <link href="../index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -89,6 +89,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -101,7 +130,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part1/intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part1/intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Purpose and Objective</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -135,25 +164,43 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../part1/intro.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Purpose and Objective</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../part1/ui_seminar_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  <a href="../presentations/ui_seminar_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Seminar Topics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../part1/ui_presentation_1.html" class="sidebar-item-text sidebar-link">
+  <a href="../presentations/ui_presentation_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">SAMs</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../notebooks/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Notes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../scripts/script_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Scripts</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data/links_to_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Links to Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -162,26 +209,58 @@ div.csl-indent {
  <span class="menu-text">References</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../intro2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introductionxx</span></span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#national-income-and-product-accounts" id="toc-national-income-and-product-accounts" class="nav-link active" data-scroll-target="#national-income-and-product-accounts"><span class="header-section-number">1.1</span> 1. National Income and Product Accounts</a></li>
+  <li><a href="#core-form-i-o-accounts" id="toc-core-form-i-o-accounts" class="nav-link" data-scroll-target="#core-form-i-o-accounts"><span class="header-section-number">1.2</span> 2. Core Form I-O Accounts</a>
+  <ul class="collapse">
+  <li><a href="#core-form-i-o-accounts-1" id="toc-core-form-i-o-accounts-1" class="nav-link" data-scroll-target="#core-form-i-o-accounts-1"><span class="header-section-number">1.2.1</span> 2.1 Core Form I-O Accounts</a></li>
+  <li><a href="#direct-input-coefficients" id="toc-direct-input-coefficients" class="nav-link" data-scroll-target="#direct-input-coefficients"><span class="header-section-number">1.2.2</span> 2,2 Direct input coefficients</a></li>
+  </ul></li>
+  <li><a href="#inter-industry-adjacency-matrix" id="toc-inter-industry-adjacency-matrix" class="nav-link" data-scroll-target="#inter-industry-adjacency-matrix"><span class="header-section-number">1.3</span> 3. Inter-Industry Adjacency Matrix</a>
+  <ul class="collapse">
+  <li><a href="#identifying-an-rpvc-path-in-an-adjacency-matrix" id="toc-identifying-an-rpvc-path-in-an-adjacency-matrix" class="nav-link" data-scroll-target="#identifying-an-rpvc-path-in-an-adjacency-matrix"><span class="header-section-number">1.3.1</span> 3.1 Identifying an RPVC Path in an Adjacency Matrix</a></li>
+  <li><a href="#visual-analysis-of-a-path-in-core-form-i-o-accounts" id="toc-visual-analysis-of-a-path-in-core-form-i-o-accounts" class="nav-link" data-scroll-target="#visual-analysis-of-a-path-in-core-form-i-o-accounts"><span class="header-section-number">1.3.2</span> 3.2 Visual Analysis of a Path in Core Form I-O Accounts</a></li>
+  </ul></li>
+  <li><a href="#leontief-form-i-o-accounts" id="toc-leontief-form-i-o-accounts" class="nav-link" data-scroll-target="#leontief-form-i-o-accounts"><span class="header-section-number">1.4</span> 4. Leontief Form I-O Accounts:</a>
+  <ul class="collapse">
+  <li><a href="#leontief-form-output-space-primal" id="toc-leontief-form-output-space-primal" class="nav-link" data-scroll-target="#leontief-form-output-space-primal"><span class="header-section-number">1.4.1</span> 4.1 Leontief Form, Output Space (Primal)</a></li>
+  <li><a href="#leontief-form-input-space-dual" id="toc-leontief-form-input-space-dual" class="nav-link" data-scroll-target="#leontief-form-input-space-dual"><span class="header-section-number">1.4.2</span> 4.2 Leontief Form, Input Space (Dual)</a></li>
+  <li><a href="#column-space-expansion-of-leontief-form-i-o-output-space" id="toc-column-space-expansion-of-leontief-form-i-o-output-space" class="nav-link" data-scroll-target="#column-space-expansion-of-leontief-form-i-o-output-space"><span class="header-section-number">1.4.3</span> 4.3 Column space expansion of Leontief Form I-O Output Space:</a></li>
+  <li><a href="#visualization-of-tier-1-column-space-expansion" id="toc-visualization-of-tier-1-column-space-expansion" class="nav-link" data-scroll-target="#visualization-of-tier-1-column-space-expansion"><span class="header-section-number">1.4.4</span> 4.5 Visualization of Tier 1 Column Space Expansion</a></li>
+  <li><a href="#column-space-expansion-of-leontief-form-i-o-input-space" id="toc-column-space-expansion-of-leontief-form-i-o-input-space" class="nav-link" data-scroll-target="#column-space-expansion-of-leontief-form-i-o-input-space"><span class="header-section-number">1.4.5</span> 4.6 Column space expansion of Leontief Form I-O Input Space:</a></li>
+  <li><a href="#visualization-of-tier-1-column-space-expansion-1" id="toc-visualization-of-tier-1-column-space-expansion-1" class="nav-link" data-scroll-target="#visualization-of-tier-1-column-space-expansion-1"><span class="header-section-number">1.4.6</span> 4.7 Visualization of Tier 1 Column Space Expansion</a></li>
+  </ul></li>
+  <li><a href="#column-space-expansion-of-rpvcs" id="toc-column-space-expansion-of-rpvcs" class="nav-link" data-scroll-target="#column-space-expansion-of-rpvcs"><span class="header-section-number">1.5</span> 5. Column Space Expansion of RPVCs</a>
+  <ul class="collapse">
+  <li><a href="#supply-chain-tier-1-column-space-expansion-of-total-output-of-vector-o5" id="toc-supply-chain-tier-1-column-space-expansion-of-total-output-of-vector-o5" class="nav-link" data-scroll-target="#supply-chain-tier-1-column-space-expansion-of-total-output-of-vector-o5"><span class="header-section-number">1.5.1</span> 5.1 Supply Chain Tier 1 Column Space Expansion of Total Output of Vector o<sub>5</sub></a></li>
+  <li><a href="#supply-chain-tier-2-column-space-expansion-of-total-output-of-vector-o4" id="toc-supply-chain-tier-2-column-space-expansion-of-total-output-of-vector-o4" class="nav-link" data-scroll-target="#supply-chain-tier-2-column-space-expansion-of-total-output-of-vector-o4"><span class="header-section-number">1.5.2</span> 5.2 Supply Chain Tier 2 Column Space Expansion of Total Output of Vector o<sub>4</sub></a></li>
+  <li><a href="#supply-chain-tier-3-column-space-expansion-of-total-output-of-vector-o3" id="toc-supply-chain-tier-3-column-space-expansion-of-total-output-of-vector-o3" class="nav-link" data-scroll-target="#supply-chain-tier-3-column-space-expansion-of-total-output-of-vector-o3"><span class="header-section-number">1.5.3</span> 5.3 Supply Chain Tier 3 Column Space Expansion of Total Output of Vector o<sub>3</sub></a></li>
+  <li><a href="#supply-chain-tier-4-column-space-expansion-of-total-output-of-vector-o2" id="toc-supply-chain-tier-4-column-space-expansion-of-total-output-of-vector-o2" class="nav-link" data-scroll-target="#supply-chain-tier-4-column-space-expansion-of-total-output-of-vector-o2"><span class="header-section-number">1.5.4</span> 5.4 Supply Chain Tier 4 Column Space Expansion of Total Output of Vector o<sub>2</sub></a></li>
+  </ul></li>
+  <li><a href="#supply-chain-visualization" id="toc-supply-chain-visualization" class="nav-link" data-scroll-target="#supply-chain-visualization"><span class="header-section-number">1.6</span> 6. Supply Chain Visualization</a>
+  <ul class="collapse">
+  <li><a href="#assemble-a-supply-chain-knowlegebase" id="toc-assemble-a-supply-chain-knowlegebase" class="nav-link" data-scroll-target="#assemble-a-supply-chain-knowlegebase"><span class="header-section-number">1.6.1</span> 6.1 Assemble a Supply Chain Knowlegebase</a></li>
+  <li><a href="#query-knowlegebase-for-supply-chain-pattern" id="toc-query-knowlegebase-for-supply-chain-pattern" class="nav-link" data-scroll-target="#query-knowlegebase-for-supply-chain-pattern"><span class="header-section-number">1.6.2</span> 6.2 Query Knowlegebase for Supply Chain Pattern</a></li>
+  <li><a href="#visualization-of-supply-chain" id="toc-visualization-of-supply-chain" class="nav-link" data-scroll-target="#visualization-of-supply-chain"><span class="header-section-number">1.6.3</span> 6.3 Visualization of Supply Chain</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Purpose and Objective</span></h1>
 </div>
 
 
@@ -198,7 +277,595 @@ div.csl-indent {
 </header>
 
 
-<p>This is a book created from markdown and executable code.</p>
+<p>Resource-Product Value chain analysis and visualization using I-O accounts as a data source.</p>
+<p>A premise of this project is that double-entry I-O accounts contain a sufficient data set to derive directed acyclical graphs that can in turn be visualized. The graph (composed of nodes and edges) depicts the order and sequence of activities in a process that transforms a primary resource (e.g.&nbsp;wood from standing trees) into an end product (e.g., electricity generated by burning wood - biomass power generation). Graphs of this type are commonly referred to as “supply chains” or “resource value chains” or “resource-product value chains (RPVC)”.</p>
+<p>This project describes and illustrates methods used extract and visualize RPVCs from I-O accounts.</p>
+<section id="national-income-and-product-accounts" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="national-income-and-product-accounts"><span class="header-section-number">1.1</span> 1. National Income and Product Accounts</h2>
+<p>Input-Output accounts are an artifact in a System of National Accounts or SNA (also referred to as National Income and Product Accounts or NIPA). Fundamental accounting identities hold for NIPA accounts and I-O accounts inherit the same identities.</p>
+<p>National Income and Product identities (in scalar form): <span class="math display">\[
+\begin{align}
+  v = c+i+g+(e-m)   &amp;&amp; \text{(National Income = National Product)}\\
+  m+v = c+i+g+e     &amp;&amp; \text{(GNI + imports = GNP)}\\
+  m+v = f     &amp;&amp; \text{(imports + GNI = Total Final Demand = f)}\\
+\end{align}
+\]</span></p>
+<p>I-O accounts add an intermediate output and outlay variables to the identity to introduce the concept of total industry output and outlay:</p>
+<p><span class="math display">\[
+\begin{align}
+  x+m+v = x+f     &amp;&amp; \text{(x=intermediate output/outlay; (x+f) and (m+v)= total output)}\\
+\end{align}
+\]</span></p>
+</section>
+<section id="core-form-i-o-accounts" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="core-form-i-o-accounts"><span class="header-section-number">1.2</span> 2. Core Form I-O Accounts</h2>
+<section id="core-form-i-o-accounts-1" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="core-form-i-o-accounts-1"><span class="header-section-number">1.2.1</span> 2.1 Core Form I-O Accounts</h3>
+<p>The fundamental accounting identities (i.e., double-entry identities) for I-O are shown in equations (1) and (2) below. These matrix equations describe the <em>Core Form</em> (vs the <em>Leontief Form</em>) of I-O accounts</p>
+<p><span class="math display">\[
+\begin{align}
+    X + f = t &amp;&amp; \text{(Intermediate Demand + Final Demand = Total Output) (1)}\\
+    X + V + M = q &amp;&amp; \text{(Intermediate Outlay + Value Added + Imports = Total Outlay) (2)}\\
+\end{align}
+\]</span></p>
+</section>
+<section id="direct-input-coefficients" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="direct-input-coefficients"><span class="header-section-number">1.2.2</span> 2,2 Direct input coefficients</h3>
+<p>Using the <em>Core Form</em> equations (1) and (2), and assuming a multi-sector set of accounts, we cannot associate the multi-sector pattern of inputs (V and M) with the multi-sector pattern of final products f.&nbsp;In order to do this, we need algebraically transform the <em>Core Form</em> accounts into the <em>Leontief Form</em> of the same I-O accounts. To accomplish the algebraic transformation, start with the assumption that the pattern of inputs for an activity’s product can be given by a vector of <em>direct coefficients</em> as shown in equations (3) - (5).</p>
+<p><span class="math display">\[
+\begin{align}
+    \hat{q}^{-1}X = _{i}A &amp;&amp; \text{(Inter-industry Direct Input Coefficients matrix iA) (3)}\\
+    \hat{q}^{-1}V = _{v}A &amp;&amp; \text{(Value Added Direct Input Coefficients matrix vA) (4)}\\
+    \hat{q}^{-1}M = _{m}A &amp;&amp; \text{(Import Direct Input Coefficients matrix mA) (5)}\\
+\end{align}
+\]</span></p>
+<p>Total Industry Outlay Vector <span class="math inline">\([q]_{1\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[q]_{1\times 6}} = \left[\begin{array}
+{rrr}
+q_{1} \\
+q_{2} \\
+q_{3} \\
+q_{4} \\
+q_{5} \\
+q_{6} \\
+\end{array}\right]
+\]</span></p>
+<p>Total Outlay Inverse (Reciprocals) Matrix <span class="math inline">\([\hat{q}^{-1}]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf {[\hat{q}^{-1}]_{6\times 6}} = \left[\begin{array}
+{rrr}
+(\frac{1} q_{1}) &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; (\frac{1} q_{2}) &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; (\frac{1} q_{3}) &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; (\frac{1} q_{4}) &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; (\frac{1} q_{5}) &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; (\frac{1} q_{6}) \\
+\end{array}\right]
+\]</span></p>
+<section id="inter-industry-direct-coefficients" class="level4" data-number="1.2.2.1">
+<h4 data-number="1.2.2.1" class="anchored" data-anchor-id="inter-industry-direct-coefficients"><span class="header-section-number">1.2.2.1</span> 2.2.1 Inter-industry Direct Coefficients</h4>
+<p><span class="math display">\[
+\begin{align}
+    \hat{q}^{-1}X = _{i}A &amp;&amp; \text{(Inter-industry Direct Input Coefficients matrix iA) (3)}\\
+\end{align}
+\]</span></p>
+<p>Inter-industry Transactions Matrix <span class="math inline">\([X]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[X]_{6\times 6}} = \left[\begin{array}
+{rrr}
+x_{11} &amp; x_{12} &amp; x_{13} &amp; x_{14} &amp; x_{15} &amp; x_{16} \\
+x_{21} &amp; x_{22} &amp; x_{23} &amp; x_{24} &amp; x_{25} &amp; x_{26} \\
+x_{31} &amp; x_{32} &amp; x_{33} &amp; x_{34} &amp; x_{35} &amp; x_{36} \\
+x_{41} &amp; x_{42} &amp; x_{43} &amp; x_{44} &amp; x_{45} &amp; x_{46} \\
+x_{51} &amp; x_{52} &amp; x_{53} &amp; x_{54} &amp; x_{55} &amp; x_{56} \\
+x_{61} &amp; x_{62} &amp; x_{63} &amp; x_{64} &amp; x_{65} &amp; x_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Inter-Industry Explicit Computation of Direct Coefficients Matrix <span class="math inline">\([\hat{q}^{-1}X]_{6\times 6}=[_{i}A]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[\hat{q}^{-1}X]_{6\times 6}=[_{i}A]_{6\times 6}} = \left[\begin{array}
+{rrr}
+((\frac{1} q_{1})*x_{11})=_{i}a_{11} &amp; ((\frac{1} q_{1})*x_{12})=_{i}a_{12} &amp; ((\frac{1} q_{1})*x_{13})=_{i}a_{13} &amp; ((\frac{1} q_{1})*x_{13})=_{i}a_{14} &amp; ((\frac{1} q_{1})*x_{15})=_{i}a_{15} &amp; ((\frac{1} q_{1})*x_{16})=a_{16} \\
+((\frac{1} q_{2})*x_{21})=_{i}a_{21} &amp; ((\frac{1} q_{2})*x_{22})=_{i}a_{22} &amp; ((\frac{1} q_{2})*x_{23})=_{i}a_{23} &amp; ((\frac{1} q_{2})*x_{23})=_{i}a_{24} &amp; ((\frac{1} q_{2})*x_{25})=_{i}a_{25} &amp; ((\frac{1} q_{2})*x_{26})=a_{26} \\
+((\frac{1} q_{3})*x_{31})=_{i}a_{31} &amp; ((\frac{1} q_{3})*x_{32})=_{i}a_{32} &amp; ((\frac{1} q_{3})*x_{33})=_{i}a_{33} &amp; ((\frac{1} q_{3})*x_{33})=_{i}a_{34} &amp; ((\frac{1} q_{3})*x_{35})=_{i}a_{35} &amp; ((\frac{1} q_{3})*x_{36})=a_{36} \\
+((\frac{1} q_{4})*x_{41})=_{i}a_{41} &amp; ((\frac{1} q_{4})*x_{42})=_{i}a_{42} &amp; ((\frac{1} q_{4})*x_{43})=_{i}a_{43} &amp; ((\frac{1} q_{4})*x_{43})=_{i}a_{44} &amp; ((\frac{1} q_{4})*x_{45})=_{i}a_{45} &amp; ((\frac{1} q_{4})*x_{46})=a_{46} \\
+((\frac{1} q_{5})*x_{51})=_{i}a_{51} &amp; ((\frac{1} q_{5})*x_{52})=_{i}a_{52} &amp; ((\frac{1} q_{5})*x_{53})=_{i}a_{53} &amp; ((\frac{1} q_{5})*x_{53})=_{i}a_{54} &amp; ((\frac{1} q_{5})*x_{55})=_{i}a_{55} &amp; ((\frac{1} q_{5})*x_{56})=a_{56} \\
+((\frac{1} q_{6})*x_{61})=_{i}a_{61} &amp; ((\frac{1} q_{6})*x_{62})=_{i}a_{62} &amp; ((\frac{1} q_{6})*x_{63})=_{i}a_{63} &amp; ((\frac{1} q_{6})*x_{63})=_{i}a_{64} &amp; ((\frac{1} q_{6})*x_{65})=_{i}a_{65} &amp; ((\frac{1} q_{6})*x_{66})=a_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Inter-Industry Direct Coefficients Matrix <span class="math inline">\([_{i}A]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[_{i}A]_{6\times 6}} = \left[\begin{array}
+{rrr}
+_{i}a_{11} &amp; _{i}a_{12} &amp; _{i}a_{13} &amp; _{i}a_{14} &amp; _{i}a_{15} &amp; a_{16} \\
+_{i}a_{21} &amp; _{i}a_{22} &amp; _{i}a_{23} &amp; _{i}a_{24} &amp; _{i}a_{25} &amp; a_{26} \\
+_{i}a_{31} &amp; _{i}a_{32} &amp; _{i}a_{33} &amp; _{i}a_{34} &amp; _{i}a_{35} &amp; a_{36} \\
+_{i}a_{41} &amp; _{i}a_{42} &amp; _{i}a_{43} &amp; _{i}a_{44} &amp; _{i}a_{45} &amp; a_{46} \\
+_{i}a_{51} &amp; _{i}a_{52} &amp; _{i}a_{53} &amp; _{i}a_{54} &amp; _{i}a_{55} &amp; a_{56} \\
+_{i}a_{61} &amp; _{i}a_{62} &amp; _{i}a_{63} &amp; _{i}a_{64} &amp; _{i}a_{65} &amp; a_{66} \\
+\end{array}\right]
+\]</span></p>
+</section>
+<section id="total-value-added-direct-coefficients" class="level4" data-number="1.2.2.2">
+<h4 data-number="1.2.2.2" class="anchored" data-anchor-id="total-value-added-direct-coefficients"><span class="header-section-number">1.2.2.2</span> 2.2.2 Total Value Added Direct Coefficients</h4>
+<p><span class="math display">\[
+\begin{align}
+    \hat{q}^{-1}V = _{v}A &amp;&amp; \text{(Value Added Direct Input Coefficients matrix vA) (4)}\\
+\end{align}
+\]</span></p>
+<p>Total Value Added Matrix <span class="math inline">\([V]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf {[V]_{6\times 6}} = \left[\begin{array}
+{rrr}
+v_{11} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; v_{22} &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; v_{33} &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; v_{44} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; v_{55} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; v_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Explicit Computation of Total Value Added Direct Coefficients Matrix <span class="math inline">\([\hat{q}^{-1}v]_{6\times 6}=[_{v}A]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[\hat{q}^{-1}V]_{6\times 6}=[_{v}A]_{6\times 6}} = \left[\begin{array}
+{rrr}
+((\frac{1} q_{1})*v_{11})=_{v}a_{11} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; ((\frac{1} q_{2})*v_{22})=_{v}a_{22} &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; ((\frac{1} q_{3})*v_{33})=_{v}a_{33} &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; ((\frac{1} q_{4})*v_{43})=_{v}a_{44} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; ((\frac{1} q_{5})*v_{55})=_{v}a_{55} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; ((\frac{1} q_{6})*v_{66})=_{v}a_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Total Value Added Direct Coefficients Matrix <span class="math inline">\([_{v}A]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[_{v}A]_{6\times 6}} = \left[\begin{array}
+{rrr}
+_{v}a_{11} &amp;0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; _{v}a_{22} &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; _{v}a_{33} &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; _{v}a_{44} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; _{v}a_{55} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; _{v}a_{66} \\
+\end{array}\right]
+\]</span></p>
+</section>
+<section id="total-imports-direct-coefficients" class="level4" data-number="1.2.2.3">
+<h4 data-number="1.2.2.3" class="anchored" data-anchor-id="total-imports-direct-coefficients"><span class="header-section-number">1.2.2.3</span> 2.2.3 Total Imports Direct Coefficients</h4>
+<p><span class="math display">\[
+\begin{align}
+    \hat{q}^{-1}M = _{m}A &amp;&amp; \text{(Import Direct Input Coefficients matrix mA) (5)}\\
+\end{align}
+\]</span></p>
+<p>Total Imports Matrix <span class="math inline">\([M]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf {[M]_{6\times 6}} = \left[\begin{array}
+{rrr}
+m_{11} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; m_{22} &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; m_{33} &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; m_{44} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; m_{55} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; m_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Explicit Computation of Total Imports Direct Coefficients Matrix <span class="math inline">\([\hat{q}^{-1}M]_{6\times 6}=[_{m}A]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[\hat{q}^{-1}M]_{6\times 6}=[_{m}A]_{6\times 6}} = \left[\begin{array}
+{rrr}
+((\frac{1} q_{1})*m_{11})=_{m}a_{11} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; ((\frac{1} q_{2})*m_{22})=_{m}a_{22} &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; ((\frac{1} q_{3})*m_{33})=_{m}a_{33} &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; ((\frac{1} q_{4})*m_{43})=_{m}a_{44} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; ((\frac{1} q_{5})*m_{55})=_{m}a_{55} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; ((\frac{1} q_{6})*m_{66})=_{m}a_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Total Value Added Direct Coefficients Matrix <span class="math inline">\([_{m}A]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[_{m}A]_{6\times 6}} = \left[\begin{array}
+{rrr}
+_{m}a_{11} &amp;0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; _{m}a_{22} &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; _{m}a_{33} &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; _{m}a_{44} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; _{m}a_{55} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; _{m}a_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Direct Coefficients Matrix <span class="math inline">\([\hat{q}^{-1}X]_{6\times 6}=[_{i}A]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[\hat{q}^{-1}X]_{6\times 6}=[_{i}A]_{6\times 6}} = \left[\begin{array}
+{rrr}
+((\frac{1} q_{1})*x_{11})=_{i}a_{11} &amp; ((\frac{1} q_{1})*x_{12})=_{i}a_{12} &amp; ((\frac{1} q_{1})*x_{13})=_{i}a_{13} &amp; ((\frac{1} q_{1})*x_{13})=_{i}a_{14} &amp; ((\frac{1} q_{1})*x_{15})=_{i}a_{15} &amp; ((\frac{1} q_{1})*x_{16})=a_{16} \\
+((\frac{1} q_{2})*x_{21})=_{i}a_{21} &amp; ((\frac{1} q_{2})*x_{22})=_{i}a_{22} &amp; ((\frac{1} q_{2})*x_{23})=_{i}a_{23} &amp; ((\frac{1} q_{2})*x_{23})=_{i}a_{24} &amp; ((\frac{1} q_{2})*x_{25})=_{i}a_{25} &amp; ((\frac{1} q_{2})*x_{26})=a_{26} \\
+((\frac{1} q_{3})*x_{31})=_{i}a_{31} &amp; ((\frac{1} q_{3})*x_{32})=_{i}a_{32} &amp; ((\frac{1} q_{3})*x_{33})=_{i}a_{33} &amp; ((\frac{1} q_{3})*x_{33})=_{i}a_{34} &amp; ((\frac{1} q_{3})*x_{35})=_{i}a_{35} &amp; ((\frac{1} q_{3})*x_{36})=a_{36} \\
+((\frac{1} q_{4})*x_{41})=_{i}a_{41} &amp; ((\frac{1} q_{4})*x_{42})=_{i}a_{42} &amp; ((\frac{1} q_{4})*x_{43})=_{i}a_{43} &amp; ((\frac{1} q_{4})*x_{43})=_{i}a_{44} &amp; ((\frac{1} q_{4})*x_{45})=_{i}a_{45} &amp; ((\frac{1} q_{4})*x_{46})=a_{46} \\
+((\frac{1} q_{5})*x_{51})=_{i}a_{51} &amp; ((\frac{1} q_{5})*x_{52})=_{i}a_{52} &amp; ((\frac{1} q_{5})*x_{53})=_{i}a_{53} &amp; ((\frac{1} q_{5})*x_{53})=_{i}a_{54} &amp; ((\frac{1} q_{5})*x_{55})=_{i}a_{55} &amp; ((\frac{1} q_{5})*x_{56})=a_{56} \\
+((\frac{1} q_{6})*x_{61})=_{i}a_{61} &amp; ((\frac{1} q_{6})*x_{62})=_{i}a_{62} &amp; ((\frac{1} q_{6})*x_{63})=_{i}a_{63} &amp; ((\frac{1} q_{6})*x_{63})=_{i}a_{64} &amp; ((\frac{1} q_{6})*x_{65})=_{i}a_{65} &amp; ((\frac{1} q_{6})*x_{66})=a_{66} \\
+\end{array}\right]
+\]</span></p>
+</section>
+</section>
+</section>
+<section id="inter-industry-adjacency-matrix" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="inter-industry-adjacency-matrix"><span class="header-section-number">1.3</span> 3. Inter-Industry Adjacency Matrix</h2>
+<section id="identifying-an-rpvc-path-in-an-adjacency-matrix" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="identifying-an-rpvc-path-in-an-adjacency-matrix"><span class="header-section-number">1.3.1</span> 3.1 Identifying an RPVC Path in an Adjacency Matrix</h3>
+<p>The <span class="math inline">\([_{i}A]\)</span> matrix is commonly referred to as the <em>Direct Coefficients</em> matrix. The term <em>Direct</em> refers to the <em>one-step</em> relationships between an industry activity and its input suppliers. That is, each industry activity is one transaction (i.e., <em>one step</em>) removed from each of its suppliers. In aggregate, each industry activity and its suppliers have a <em>one-to-many</em> relationship (i.e., one activity has many suppliers). Each activity’s column vector in the <span class="math inline">\([_{i}A]\)</span> matrix describes that activity’s <em>one-to-many</em> relationships with its input suppliers.</p>
+<p>An <em>Adjacency Matrix</em> derived from the <span class="math inline">\([_{i}A]\)</span> matrix can be used to determine the number of one-step relationships (i.e., transactions) between any pair of purchasing and suppling activities. In other words, an <em>Adjacency Matrix</em> can reveal the path and distance (number of steps) between an origin activity and a destination activity (i.e., an RPVC).</p>
+<p>Derive adjacency matrix <span class="math inline">\([B]\)</span> from the <span class="math inline">\([_{i}A]\)</span> matrix. Successive powers of <span class="math inline">\([B^{n}]\)</span> will identify successive paths of step-length <strong><em>n</em></strong>.</p>
+<p>To illustrate an adjacency matrix, consider a portion of an <span class="math inline">\([_{i}A]\)</span> matrix with only wood-related activities. Assume industry <strong><em>1</em></strong> is <em>Grow</em>, industry <strong><em>2</em></strong> is <em>Harvest</em>, industry <strong><em>3</em></strong> is <em>Saw Mill</em>, industry <strong><em>4</em></strong> is <em>Residuals</em>, industry <strong><em>5</em></strong> is <em>Bio-Power</em>, and industry <strong><em>6</em></strong> is <em>Other</em>. Assume the commodity produced by industry <strong><em>1</em></strong> is <em>Stumpage</em> (<em>m<sup>3</sup></em> of solid wood), the commodity produced by industry <strong><em>2</em></strong> is <em>Logs</em> (containing <em>m<sup>3</sup></em> of solid wood), the commodity produced by industry <strong><em>3</em></strong> is <em>Dimension Lumber</em> (containing <em>m<sup>3</sup></em> of solid wood), the commodity produced by industry <strong><em>4</em></strong> is <em>Sawdust Residuals</em> (containing <em>m<sup>3</sup></em> of solid wood), the commodity produced by industry <strong><em>5</em></strong> is <em>Electricity</em> (generated by using <em>m<sup>3</sup></em> of solid wood <em>Sawdust Residuals</em> as fuel), and commodity produced by industry <strong><em>6</em></strong> is <em>Other</em>.</p>
+<p>The Inter-industry Direct Coefficients Matrix <span class="math inline">\([_{i}A]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[_{i}A]_{6\times 6}} = \left[\begin{array}
+{rrr}
+_{i}a_{11} &amp; _{i}a_{12} &amp; _{i}a_{13} &amp; _{i}a_{14} &amp; _{i}a_{15} &amp; _{i}a_{16} \\
+_{i}a_{21} &amp; _{i}a_{22} &amp; _{i}a_{23} &amp; _{i}a_{24} &amp; _{i}a_{25} &amp; _{i}a_{26} \\
+_{i}a_{31} &amp; _{i}a_{32} &amp; _{i}a_{33} &amp; _{i}a_{34} &amp; _{i}a_{35} &amp; _{i}a_{36} \\
+_{i}a_{41} &amp; _{i}a_{42} &amp; _{i}a_{43} &amp; _{i}a_{44} &amp; _{i}a_{45} &amp; _{i}a_{46} \\
+_{i}a_{51} &amp; _{i}a_{52} &amp; _{i}a_{53} &amp; _{i}a_{54} &amp; _{i}a_{55} &amp; _{i}a_{56} \\
+_{i}a_{61} &amp; _{i}a_{62} &amp; _{i}a_{63} &amp; _{i}a_{64} &amp; _{i}a_{65} &amp; _{i}a_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Inter-industry Direct Coefficients Matrix <span class="math inline">\([_{i}A]_{6\times 6}\)</span> where <span class="math inline">\(_{i}a_{nn}\neq{0}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[_{i}A]_{6\times 6}} = \left[\begin{array}
+{rrr}
+_{i}a_{11} &amp; _{i}a_{12} &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; _{i}a_{22} &amp; _{i}a_{23} &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; _{i}a_{33} &amp; _{i}a_{34} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; _{i}a_{44} &amp; _{i}a_{45} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}\right]
+\]</span></p>
+<p>Adjacency matrix <span class="math inline">\([B^{1}_{6\times 6}]\)</span> (no 1-step path between Activity 5 and Activity 1 indicated by <span class="math inline">\(b^{1}_{15}=0\)</span>):</p>
+<p><span class="math display">\[\mathbf{[B^{1}]_{6\times 6}} = \left[\begin{array}
+{rrr}
+1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}\right]
+\]</span></p>
+<p>Adjacency Matrix <span class="math inline">\([B^{2}_{6\times 6}]\)</span> (no 2-step path between Activity 5 and Activity 1 indicated by <span class="math inline">\(b^{2}_{15}=0\)</span>):</p>
+<p><span class="math display">\[\mathbf{[B^{2}]_{6\times 6}} = \left[\begin{array}
+{rrr}
+1 &amp; 2 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 2 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}\right]
+\]</span></p>
+<p>Adjacency Matrix <span class="math inline">\([B^{3}_{6\times 6}]\)</span> (no 3-step path between Activity 5 and Activity 1 indicated by <span class="math inline">\(b^{3}_{15}=0\)</span>):</p>
+<p><span class="math display">\[\mathbf{[B^{3}]_{6\times 6}} = \left[\begin{array}
+{rrr}
+1 &amp; 3 &amp; 3 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 3 &amp; 3 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 3 &amp; 2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}\right]
+\]</span></p>
+<p>Adjacency Matrix <span class="math inline">\([B^{4}_{6\times 6}]\)</span> (one 4-step path between Activity 5 and Activity 1 indicated by <span class="math inline">\(b^{4}_{15}=1\)</span>):</p>
+<p><span class="math display">\[\mathbf{[B^{4}]_{6\times 6}} = \left[\begin{array}
+{rrr}
+1 &amp; 4 &amp; 6 &amp; 4 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 4 &amp; 5 &amp; 2 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}\right]
+\]</span></p>
+<p>The <em>trace</em> of the <em>path</em> of <em>length</em> 4 from Activity 5 to Activity 1 in <span class="math inline">\([B^{4}]\)</span>:</p>
+<p><strong>step 1: (b<sub>55</sub> &gt; b<sub>45</sub>), step 2: (b<sub>43</sub> &gt; b<sub>33</sub>), step 3: (b<sub>32</sub> &gt; b<sub>22</sub>), step 4: (b<sub>21</sub> &gt; b<sub>11</sub>)</strong></p>
+<p>A <em>path</em> like this can be used below to determine the order and number of steps (column-space expansions) necessary to decompose a specific RPVC from a <em>Leontief Form</em> product vector.</p>
+</section>
+<section id="visual-analysis-of-a-path-in-core-form-i-o-accounts" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="visual-analysis-of-a-path-in-core-form-i-o-accounts"><span class="header-section-number">1.3.2</span> 3.2 Visual Analysis of a Path in Core Form I-O Accounts</h3>
+<section id="build-sets-of-nodes-and-edges-from-i-o-matrices" class="level4" data-number="1.3.2.1">
+<h4 data-number="1.3.2.1" class="anchored" data-anchor-id="build-sets-of-nodes-and-edges-from-i-o-matrices"><span class="header-section-number">1.3.2.1</span> 3.2.1 Build Sets of Nodes and Edges from I-O Matrices</h4>
+<p>Build relationship matrices (node-by-node matrix for a given relationship)</p>
+<ol type="a">
+<li><p>Nodes are (1) Industries, (2) Transactions Nodes have properties (1) Subject or (2) Object</p></li>
+<li><p>Edges (relationships or Predicates) consist of (1) “Interacts With”</p></li>
+<li><p>Semantic Triple EXAMPLE 1: Subject(Industry 1) &gt; Predicate(“Interacts with”) &gt; Object(Transaction 1)</p></li>
+<li><p>Semantic Triple EXAMPLE 2: Subject(Transaction 1) &gt; Predicate(“Interacts with”) &gt; Object(Industry 2)</p></li>
+<li><p>Semantic Chain EXAMPLE 3 where Subject <strong><em>MATCHES</em></strong> Object: Subject(Industry 1) &gt; Predicate(“Interacts with”) &gt; Object(Transaction 1) Subject(Transaction 1) &gt; Predicate(“Interacts with”) &gt; Object(Industry 2)</p></li>
+<li><p>SEMANTIC TRANSACTION CHAIN: (Industry 1) &gt; (“Interacts with”) &gt; (Transaction 1) &gt; (“Interacts with”) &gt; (Industry 2)</p></li>
+</ol>
+</section>
+<section id="visualization-of-a-path-in-a-graph" class="level4" data-number="1.3.2.2">
+<h4 data-number="1.3.2.2" class="anchored" data-anchor-id="visualization-of-a-path-in-a-graph"><span class="header-section-number">1.3.2.2</span> 3.2.2 Visualization of a Path in a Graph</h4>
+<p>TBD</p>
+</section>
+</section>
+</section>
+<section id="leontief-form-i-o-accounts" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="leontief-form-i-o-accounts"><span class="header-section-number">1.4</span> 4. Leontief Form I-O Accounts:</h2>
+<p><em>Leontief-Form</em> I-O accounts map multi-sector inputs to multi-sector output. This is achieved by deriving a multi-sector transformation matrix to transform the <em>Core Form</em> I-O accounts into the <em>Leontief-Form</em> I-O accounts. The transformation from <em>Core Form</em> to <em>Netput Form</em> to <em>Leontief Form</em> I-O accounts (including the derivation of a “multiplier matrix”) is derived algebraically as follows:</p>
+<p><span class="math display">\[
+\begin{align}
+    X+f=x &amp;&amp; \text{(Core Form I-O Accounts) (6)}\\
+    X=_{i}Ax &amp;&amp; \text{(Substitute) (7)}\\
+    _{i}Ax+f=x &amp;&amp; \text{(Core Form I-O Accounts) (8)}\\
+        f=(I-_{i}A)x &amp;&amp; \text{(Rearrange; Netput Form of I-O Accounts) (9)}\\
+    N = (I-_{i}A)^{-1} &amp;&amp; \text{(Substitute) (10)}\\
+        f=Nx &amp;&amp; \text{(Netput Form of I-O Accounts) (11)}\\
+    x = N^{-1}f &amp;&amp; \text{(Rearrange; Leontief Form I-O Accounts) (12)}\\
+    Z = N^{-1} &amp;&amp; \text{(Substitute) (13)}\\
+    x = Zf &amp;&amp; \text{(Leontief Form I-O Accounts) (14)}\\
+\end{align}
+\]</span></p>
+<section id="leontief-form-output-space-primal" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="leontief-form-output-space-primal"><span class="header-section-number">1.4.1</span> 4.1 Leontief Form, Output Space (Primal)</h3>
+<p>Leontief Form Output Space I-O Accounting identites:</p>
+<p><span class="math display">\[
+\begin{align}
+    x = Zf &amp;&amp; \text{(Leontief Form for Total Output) (15)}\\
+\end{align}
+\]</span></p>
+<p>Total Output vector <span class="math inline">\([x]_{1\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[x]_{1\times 6}} = \left[\begin{array}
+{rrr}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4} \\
+x_{5} \\
+x_{6} \\
+\end{array}\right]
+\]</span></p>
+<p>Total Final Demand Vector <span class="math inline">\([f]_{1\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[f]_{1\times 6}} = \left[\begin{array}
+{rrr}
+f_{1} \\
+f_{2} \\
+f_{3} \\
+f_{4} \\
+f_{5} \\
+f_{6} \\
+\end{array}\right]
+\]</span></p>
+<p>Leontief Multiplier Matrix <span class="math inline">\([Z]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[Z]_{6\times 6}} = \left[\begin{array}
+{rrr}
+z_{11} &amp; z_{12} &amp; z_{13} &amp; z_{14} &amp; z_{15} &amp; z_{16} \\
+z_{21} &amp; z_{22} &amp; z_{23} &amp; z_{24} &amp; z_{25} &amp; z_{26} \\
+z_{31} &amp; z_{32} &amp; z_{33} &amp; z_{34} &amp; z_{35} &amp; z_{36} \\
+z_{41} &amp; z_{42} &amp; z_{43} &amp; z_{44} &amp; z_{45} &amp; z_{46} \\
+z_{51} &amp; z_{52} &amp; z_{53} &amp; z_{54} &amp; z_{55} &amp; z_{56} \\
+z_{61} &amp; z_{62} &amp; z_{63} &amp; z_{64} &amp; z_{65} &amp; z_{66} \\
+\end{array}\right]
+\]</span></p>
+</section>
+<section id="leontief-form-input-space-dual" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="leontief-form-input-space-dual"><span class="header-section-number">1.4.2</span> 4.2 Leontief Form, Input Space (Dual)</h3>
+<p>Leontief Form I-O Input Space Accounting Identites:</p>
+<p><span class="math display">\[
+\begin{align}
+    v = \widehat{_{v}A}Zf &amp;&amp; \text{(Leontief Form for Total Value Added) (16)}\\
+    m = \widehat{_{m}A}Zf &amp;&amp; \text{(Leontief Form for Total Imports) (17)}\\
+    (v+m) = (\widehat{_{v}A}Zf+\widehat{_{m}A}Zf) &amp;&amp; \text{(Leontief Form for Total Primary Inputs (v+m)) (18)}\\
+\end{align}
+\]</span></p>
+<p>Total Value Added vector <span class="math inline">\([v]_{1\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[v]_{1\times 6}} = \left[\begin{array}
+{rrr}
+v_{1} \\
+v_{2} \\
+v_{3} \\
+v_{4} \\
+v_{5} \\
+v_{6} \\
+\end{array}\right]
+\]</span></p>
+<p>Total Value Added Direct Coefficients matrix <span class="math inline">\([\widehat{_{v}A}]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf {[\widehat{_{v}A}]_{6\times 6}} = \left[\begin{array}
+{rrr}
+_{v}a_{11} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; _{v}a_{22} &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; _{v}a_{33} &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; _{v}a_{44} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; _{v}a_{55} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; _{v}a_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Total Final Demand Vector <span class="math inline">\([f]_{1\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[f]_{1\times 6}} = \left[\begin{array}
+{rrr}
+f_{1} \\
+f_{2} \\
+f_{3} \\
+f_{4} \\
+f_{5} \\
+f_{6} \\
+\end{array}\right]
+\]</span></p>
+<p>Leontief Form Multiplier Matrix <span class="math inline">\([Z]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[Z]_{6\times 6}} = \left[\begin{array}
+{rrr}
+z_{11} &amp; z_{12} &amp; z_{13} &amp; z_{14} &amp; z_{15} &amp; z_{16} \\
+z_{21} &amp; z_{22} &amp; z_{23} &amp; z_{24} &amp; z_{25} &amp; z_{26} \\
+z_{31} &amp; z_{32} &amp; z_{33} &amp; z_{34} &amp; z_{35} &amp; z_{36} \\
+z_{41} &amp; z_{42} &amp; z_{43} &amp; z_{44} &amp; z_{45} &amp; z_{46} \\
+z_{51} &amp; z_{52} &amp; z_{53} &amp; z_{54} &amp; z_{55} &amp; z_{56} \\
+z_{61} &amp; z_{62} &amp; z_{63} &amp; z_{64} &amp; z_{65} &amp; z_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Intermediate product matrix <span class="math inline">\([\widehat{_{v}A}Z]_{6\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[\widehat{_{v}A}Z]_{6\times 6}} = \left[\begin{array}
+{rrr}
+(_{v}a_{11}*z_{11}) &amp; (_{v}a_{11}*z_{12}) &amp; (_{v}a_{11}*z_{13}) &amp; (_{v}a_{11}*z_{14}) &amp; (_{v}a_{11}*z_{15}) &amp; (_{v}a_{11}*z_{16}) \\
+(_{v}a_{21}*z_{21}) &amp; (_{v}a_{21}*z_{22}) &amp; (_{v}a_{21}*z_{23}) &amp; (_{v}a_{21}*z_{24}) &amp; (_{v}a_{21}*z_{25}) &amp; (_{v}a_{21}*z_{26}) \\
+(_{v}a_{31}*z_{31}) &amp; (_{v}a_{31}*z_{32}) &amp; (_{v}a_{31}*z_{33}) &amp; (_{v}a_{31}*z_{34}) &amp; (_{v}a_{31}*z_{35}) &amp; (_{v}a_{31}*z_{36}) \\
+(_{v}a_{41}*z_{41}) &amp; (_{v}a_{41}*z_{42}) &amp; (_{v}a_{41}*z_{43}) &amp; (_{v}a_{41}*z_{44}) &amp; (_{v}a_{41}*z_{45}) &amp; (_{v}a_{41}*z_{46}) \\
+(_{v}a_{51}*z_{51}) &amp; (_{v}a_{51}*z_{52}) &amp; (_{v}a_{51}*z_{53}) &amp; (_{v}a_{51}*z_{54}) &amp; (_{v}a_{51}*z_{55}) &amp; (_{v}a_{51}*z_{56}) \\
+(_{v}a_{51}*z_{61}) &amp; (_{v}a_{51}*z_{62}) &amp; (_{v}a_{51}*z_{63}) &amp; (_{v}a_{51}*z_{64}) &amp; (_{v}a_{51}*z_{65}) &amp; (_{v}a_{51}*z_{66}) \\
+\end{array}\right]
+\]</span></p>
+<p>Total Value Added vector v in explicit computational form <span class="math inline">\([v]_{1\times 6}=[[\widehat{_{v}A}Z][f]]_{1\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf{[v]_{1\times 6}=[[\widehat{_{v}A}Z][f]]_{1\times 6}} = \left[\begin{array}
+{rrr}
+((_{v}a_{11}*z_{11})*f_{1}) &amp; +((_{v}a_{11}*z_{12})*f_{2}) &amp; +((_{v}a_{11}*z_{13})*f_{3}) &amp; +((_{v}a_{11}*z_{14})*f_{4}) &amp; +((_{v}a_{11}*z_{15})*f_{5}) &amp; +((_{v}a_{11}*z_{16})*f_{6}) \\
+((_{v}a_{21}*z_{21})*f_{1}) &amp; +((_{v}a_{21}*z_{22})*f_{2}) &amp; +((_{v}a_{21}*z_{23})*f_{3}) &amp; +((_{v}a_{21}*z_{24})*f_{4}) &amp; +((_{v}a_{21}*z_{25})*f_{5}) &amp; +((_{v}a_{21}*z_{26})*f_{6}) \\
+((_{v}a_{31}*z_{31})*f_{1}) &amp; +((_{v}a_{31}*z_{32})*f_{2}) &amp; +((_{v}a_{31}*z_{33})*f_{3}) &amp; +((_{v}a_{31}*z_{34})*f_{4}) &amp; +((_{v}a_{31}*z_{35})*f_{5}) &amp; +((_{v}a_{31}*z_{36})*f_{6}) \\
+((_{v}a_{41}*z_{41})*f_{1}) &amp; +((_{v}a_{41}*z_{42})*f_{2}) &amp; +((_{v}a_{41}*z_{43})*f_{3}) &amp; +((_{v}a_{41}*z_{44})*f_{4}) &amp; +((_{v}a_{41}*z_{45})*f_{5}) &amp; +((_{v}a_{41}*z_{46})*f_{6}) \\
+((_{v}a_{51}*z_{51})*f_{1}) &amp; +((_{v}a_{51}*z_{52})*f_{2}) &amp; +((_{v}a_{51}*z_{53})*f_{3}) &amp; +((_{v}a_{51}*z_{54})*f_{4}) &amp; +((_{v}a_{51}*z_{55})*f_{5}) &amp; +((_{v}a_{51}*z_{56})*f_{6}) \\
+((_{v}a_{51}*z_{61})*f_{1}) &amp; +((_{v}a_{51}*z_{62})*f_{2}) &amp; +((_{v}a_{51}*z_{63})*f_{3}) &amp; +((_{v}a_{51}*z_{64})*f_{4}) &amp; +((_{v}a_{51}*z_{65})*f_{5}) &amp; +((_{v}a_{51}*z_{66})*f_{6}) \\
+\end{array}\right]
+\]</span></p>
+</section>
+<section id="column-space-expansion-of-leontief-form-i-o-output-space" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="column-space-expansion-of-leontief-form-i-o-output-space"><span class="header-section-number">1.4.3</span> 4.3 Column space expansion of Leontief Form I-O Output Space:</h3>
+<p>Equation:</p>
+<p><span class="math display">\[
+\begin{align}
+    x = Zf &amp;&amp; \text{(Leontief Form for Total Output) (15)}\\
+    O = Z\hat{f} &amp;&amp; \text{($\hat{f}$ is a diagonal matrix of final demands; O is the column space of x)}\\
+\end{align}\]</span></p>
+<p>Where: Vector <span class="math inline">\([\hat{f}]_{1\times 6}\)</span>:</p>
+<p><span class="math display">\[\mathbf {[\hat{f}]_{1\times 6}} = \left[\begin{array}
+{rrr}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4} \\
+x_{5} \\
+x_{6} \\
+\end{array}\right]
+\]</span></p>
+<p>Vector f:</p>
+<p><span class="math display">\[\mathbf{f} = \left[\begin{array}
+{rrr}
+f_{11} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; f_{22} &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; f_{33} &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; f_{44} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; f_{55} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; f_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Matrix Z:</p>
+<p><span class="math display">\[\mathbf{Z} = \left[\begin{array}
+{rrr}
+z_{11} &amp; z_{12} &amp; z_{13} &amp; z_{14} &amp; z_{15} &amp; z_{16} \\
+z_{21} &amp; z_{22} &amp; z_{23} &amp; z_{24} &amp; z_{25} &amp; z_{26} \\
+z_{31} &amp; z_{32} &amp; z_{33} &amp; z_{34} &amp; z_{35} &amp; z_{36} \\
+z_{41} &amp; z_{42} &amp; z_{43} &amp; z_{44} &amp; z_{45} &amp; z_{46} \\
+z_{51} &amp; z_{52} &amp; z_{53} &amp; z_{54} &amp; z_{55} &amp; z_{56} \\
+z_{61} &amp; z_{62} &amp; z_{63} &amp; z_{64} &amp; z_{65} &amp; z_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Column-space expansion Matrix O:</p>
+<p><span class="math display">\[\mathbf{O} = \left[\begin{array}
+{rrr}
+o_{11} &amp; o_{12} &amp; o_{13} &amp; o_{14} &amp; o_{15} &amp; o_{16} \\
+o_{21} &amp; o_{22} &amp; o_{23} &amp; o_{24} &amp; o_{25} &amp; o_{26} \\
+o_{31} &amp; o_{32} &amp; o_{33} &amp; o_{34} &amp; o_{35} &amp; o_{36} \\
+o_{41} &amp; o_{42} &amp; o_{43} &amp; o_{44} &amp; o_{45} &amp; o_{46} \\
+o_{51} &amp; o_{52} &amp; o_{53} &amp; o_{54} &amp; o_{55} &amp; o_{56} \\
+o_{61} &amp; o_{62} &amp; o_{63} &amp; o_{64} &amp; o_{65} &amp; o_{66} \\
+\end{array}\right]
+\]</span></p>
+</section>
+<section id="visualization-of-tier-1-column-space-expansion" class="level3" data-number="1.4.4">
+<h3 data-number="1.4.4" class="anchored" data-anchor-id="visualization-of-tier-1-column-space-expansion"><span class="header-section-number">1.4.4</span> 4.5 Visualization of Tier 1 Column Space Expansion</h3>
+<p>TBD</p>
+</section>
+<section id="column-space-expansion-of-leontief-form-i-o-input-space" class="level3" data-number="1.4.5">
+<h3 data-number="1.4.5" class="anchored" data-anchor-id="column-space-expansion-of-leontief-form-i-o-input-space"><span class="header-section-number">1.4.5</span> 4.6 Column space expansion of Leontief Form I-O Input Space:</h3>
+<p>TBD</p>
+</section>
+<section id="visualization-of-tier-1-column-space-expansion-1" class="level3" data-number="1.4.6">
+<h3 data-number="1.4.6" class="anchored" data-anchor-id="visualization-of-tier-1-column-space-expansion-1"><span class="header-section-number">1.4.6</span> 4.7 Visualization of Tier 1 Column Space Expansion</h3>
+</section>
+</section>
+<section id="column-space-expansion-of-rpvcs" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="column-space-expansion-of-rpvcs"><span class="header-section-number">1.5</span> 5. Column Space Expansion of RPVCs</h2>
+<section id="supply-chain-tier-1-column-space-expansion-of-total-output-of-vector-o5" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="supply-chain-tier-1-column-space-expansion-of-total-output-of-vector-o5"><span class="header-section-number">1.5.1</span> 5.1 Supply Chain Tier 1 Column Space Expansion of Total Output of Vector o<sub>5</sub></h3>
+<p><strong><em>SECTION 3.3 TBD!!!!</em></strong></p>
+<p>Column space expansion of output vector o<sub>5</sub>:</p>
+<p><span class="math display">\[
+\begin{align}
+    o = Zf &amp;&amp; \text{(Leontief transformation function)}\\
+    O = Z\hat{f} &amp;&amp; \text{(f-hat is a diagonal matrix of intermediate demands by Biopwr; O is the column space of o)}\\
+\end{align}
+\]</span></p>
+<p>(Product Electricity from Biomass Power Generation) Vector o<sub>5</sub>:</p>
+<p><span class="math display">\[\mathbf{o_5} = \left[\begin{array}
+{rrr}
+o_{15} \\
+o_{25} \\
+o_{35} \\
+o_{45} \\
+o_{55} \\
+o_{65} \\
+\end{array}\right]
+\]</span></p>
+<p>Column space expansion of output vector o<sub>5</sub>:</p>
+<p><span class="math display">\[
+\begin{align}
+    o = Zf &amp;&amp; \text{(Leontief transformation function)}\\
+    O = Z\hat{f} &amp;&amp; \text{(f-hat is a diagonal matrix of intermediate demands by Biopwr; O is the column space of o)}\\
+\end{align}
+\]</span></p>
+<p>Matrix O:</p>
+<p><span class="math display">\[\mathbf{O} = \left[\begin{array}
+{rrr}
+o_{11} &amp; o_{12} &amp; o_{13} &amp; o_{14} &amp; o_{15} &amp; o_{16} \\
+o_{21} &amp; o_{22} &amp; o_{23} &amp; o_{24} &amp; o_{25} &amp; o_{26} \\
+o_{31} &amp; o_{32} &amp; o_{33} &amp; o_{34} &amp; o_{35} &amp; o_{36} \\
+o_{41} &amp; o_{42} &amp; o_{43} &amp; o_{44} &amp; o_{45} &amp; o_{46} \\
+o_{51} &amp; o_{52} &amp; o_{53} &amp; o_{54} &amp; o_{55} &amp; o_{56} \\
+o_{61} &amp; o_{62} &amp; o_{63} &amp; o_{64} &amp; o_{65} &amp; o_{66} \\
+\end{array}\right]
+\]</span></p>
+</section>
+<section id="supply-chain-tier-2-column-space-expansion-of-total-output-of-vector-o4" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="supply-chain-tier-2-column-space-expansion-of-total-output-of-vector-o4"><span class="header-section-number">1.5.2</span> 5.2 Supply Chain Tier 2 Column Space Expansion of Total Output of Vector o<sub>4</sub></h3>
+</section>
+<section id="supply-chain-tier-3-column-space-expansion-of-total-output-of-vector-o3" class="level3" data-number="1.5.3">
+<h3 data-number="1.5.3" class="anchored" data-anchor-id="supply-chain-tier-3-column-space-expansion-of-total-output-of-vector-o3"><span class="header-section-number">1.5.3</span> 5.3 Supply Chain Tier 3 Column Space Expansion of Total Output of Vector o<sub>3</sub></h3>
+</section>
+<section id="supply-chain-tier-4-column-space-expansion-of-total-output-of-vector-o2" class="level3" data-number="1.5.4">
+<h3 data-number="1.5.4" class="anchored" data-anchor-id="supply-chain-tier-4-column-space-expansion-of-total-output-of-vector-o2"><span class="header-section-number">1.5.4</span> 5.4 Supply Chain Tier 4 Column Space Expansion of Total Output of Vector o<sub>2</sub></h3>
+</section>
+</section>
+<section id="supply-chain-visualization" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="supply-chain-visualization"><span class="header-section-number">1.6</span> 6. Supply Chain Visualization</h2>
+<section id="assemble-a-supply-chain-knowlegebase" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="assemble-a-supply-chain-knowlegebase"><span class="header-section-number">1.6.1</span> 6.1 Assemble a Supply Chain Knowlegebase</h3>
+</section>
+<section id="query-knowlegebase-for-supply-chain-pattern" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="query-knowlegebase-for-supply-chain-pattern"><span class="header-section-number">1.6.2</span> 6.2 Query Knowlegebase for Supply Chain Pattern</h3>
+</section>
+<section id="visualization-of-supply-chain" class="level3" data-number="1.6.3">
+<h3 data-number="1.6.3" class="anchored" data-anchor-id="visualization-of-supply-chain"><span class="header-section-number">1.6.3</span> 6.3 Visualization of Supply Chain</h3>
+<p><span class="math display">\[\begin{align}
+   \begin{bmatrix}
+           W_{11} \\
+           W_{12} \\
+           \vdots \\
+           W_{1n}
+   \end{bmatrix}
+   &amp;+ \begin{bmatrix}
+           W_{21} \\
+           W_{22} \\
+           \vdots \\
+           W_{2n}
+       \end{bmatrix}
+   &amp;+ \dots
+   &amp;+ \begin{bmatrix}
+           W_{n1} \\
+           W_{n2} \\
+           \vdots \\
+           W_{nn}
+       \end{bmatrix}
+   &amp;= \begin{bmatrix}
+           \frac{W_{11} + W_{21} + \dots + W_{n1}}{n} \\
+           \frac{W_{12} + W_{22} + \dots + W_{n2}}{n} \\
+           \vdots \\
+           \frac{W_{1n} + W_{2n} + \dots + W_{nn}}{n}
+    \end{bmatrix}
+\end{align}
+\]</span></p>
+<p>```</p>
 <p>See <span class="citation" data-cites="knuth84">Knuth (<a href="../references.html#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
 
 
@@ -207,6 +874,8 @@ div.csl-indent {
 Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
 </div>
 </div>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -636,8 +1305,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../part1/ui_seminar_1.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../presentations/ui_seminar_1.html" class="pagination-link" aria-label="Seminar Topics">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Seminar Topics</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
